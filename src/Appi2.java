@@ -17,6 +17,13 @@ public class Appi2 {
 
         File appDir=new File("src");
 
+        /*
+        This code shows how you can boot up a app on the mobile device/emulator without installing the package from the
+        harddrive every time you execute the code. What the capapbility of app package and app activity does is
+        tell the computer what package to work with, and then what activity(window) to open up in that app.
+        In this case this code is opening the main start page of the app.
+         */
+
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Demo");
