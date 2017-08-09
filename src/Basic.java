@@ -7,10 +7,10 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by nlandeli on 2017-07-06.
  */
-public class Basic extends Base {
+public class Basic extends HybridBase {
     public static void main(String[] args) throws MalformedURLException {
 
-        AndroidDriver<AndroidElement> driver = capabilities();
+        AndroidDriver<AndroidElement> driver = capabilities("real");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         //xpath id className, androidUIAutomator
