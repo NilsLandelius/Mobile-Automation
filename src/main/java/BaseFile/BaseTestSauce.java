@@ -1,5 +1,5 @@
 package BaseFile;
-// import Sauce TestNG helper libraries
+// import Sauce TestNGSauce helper libraries
 
 import com.saucelabs.common.SauceOnDemandAuthentication;
 import com.saucelabs.common.SauceOnDemandSessionIdProvider;
@@ -21,7 +21,7 @@ import java.rmi.UnexpectedException;
 // import java libraries
 
 /**
- * Simple TestNG test which demonstrates being instantiated via a DataProvider in order to supply multiple browser combinations.
+ * Simple TestNGSauce test which demonstrates being instantiated via a DataProvider in order to supply multiple browser combinations.
  *
  * @author Neil Manvar
  */

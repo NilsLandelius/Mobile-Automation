@@ -5,6 +5,7 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -25,6 +26,8 @@ public class BaseChrome {
 
             cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android emulator");
             cap.setCapability(AndroidMobileCapabilityType.BROWSER_NAME,"chrome");
+            cap.setCapability(MobileCapabilityType.PLATFORM_VERSION,"7.1.1");
+            cap.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
             //cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.android.chrome");
             //cap.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,"com.google.android.apps.chrome.Main");
             //cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android device");
